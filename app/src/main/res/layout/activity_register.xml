@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlback"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="12dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@color/putih"
+            app:srcCompat="@drawable/ic_arrow_back"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_above="@+id/rlBottomDaftar"
+        android:layout_below="@id/rlback">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mohon isi data dengan valid \n untuk melakukan aktifasi akun baru Anda"
+                android:textColor="@color/hitam"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etNamaRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_edittext"
+                    android:layout_alignParentLeft="true"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:hint="Nama"/>
+                <ImageButton
+                    android:id="@+id/ibCrossXNamaRegis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/putih"
+                    app:srcCompat="@drawable/ic_clear_black_24dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etEmailRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_edittext"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:inputType="textEmailSubject"
+                    android:hint="Email"/>
+                <ImageButton
+                    android:id="@+id/ibCrossXEmailRegis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/putih"
+                    app:srcCompat="@drawable/ic_clear_black_24dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etNoHpRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:background="@drawable/round_edittext"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:hint="No HP"/>
+                <ImageButton
+                    android:id="@+id/ibCrossXNoHpRegis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/putih"
+                    app:srcCompat="@drawable/ic_clear_black_24dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etAlamatRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_edittext"
+                    android:layout_alignParentLeft="true"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp"
+                    android:hint="Alamat"/>
+                <ImageButton
+                    android:id="@+id/ibCrossXAlamatRegis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/putih"
+                    app:srcCompat="@drawable/ic_clear_black_24dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etPasswordRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_edittext"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:inputType="textPassword"
+                    android:hint="Password"/>
+                <ImageButton
+                    android:id="@+id/ibCrossXPasswordRegis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/putih"
+                    app:srcCompat="@drawable/ic_clear_black_24dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/etConfirmPassRegis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_edittext"
+                    android:layout_alignParentLeft="true"
+                    android:padding="10dp"
+                    android:inputType="textPassword"
+                    android:hint="Konfirmasi Password"/>
+                <ImageButton
+                    android:id="@+id/ibCrossXConfirmPassRegis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/putih"
+                    app:srcCompat="@drawable/ic_clear_black_24dp"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlBottomDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btnRegis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DAFTAR"
+            android:textStyle="bold"
+            android:background="@color/hitam"
+            android:textColor="@color/putih"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

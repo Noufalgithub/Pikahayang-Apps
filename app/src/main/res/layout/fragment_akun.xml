@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/putih">
+
+
+    <RelativeLayout
+        android:id="@+id/rlAkunAtas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentPaddingLeft="20dp"
+            app:contentPaddingRight="20dp"
+            app:contentPaddingTop="15dp"
+            app:contentPaddingBottom="15dp"
+            android:background="@color/putih"
+            app:cardElevation="8dp"
+            app:cardMaxElevation="8dp"
+            app:cardCornerRadius="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvPeringatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/hitam"
+                    android:text="Daftar atau Masuk untuk mendapatkan keuntungan lebih"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp">
+
+                    <Button
+                        android:id="@+id/btnMasuk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="#d1d1d1"
+                        android:textStyle="bold"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:text="MASUK"/>
+                    <Button
+                        android:id="@+id/btnDaftar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/hitam"
+                        android:textColor="@color/putih"
+                        android:textStyle="bold"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:text="daftar"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/svAkun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cvAkunBottom">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="10dp">
+                <RelativeLayout
+                    android:id="@+id/rlAkunBiodata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/llAtas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                app:srcCompat="@drawable/ic_account_circle"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:textStyle="italic"
+                                android:text="  Nama"/>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/etNamaAkun"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:background="@drawable/round_edittext"
+                                    android:padding="5dp"
+                                    android:editable="false"
+                                    android:textSize="13sp"
+                                    android:text=""/>
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textSize="12sp"
+                                android:textStyle="italic"
+                                android:text="  Email"/>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/etEmailAkun"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:editable="false"
+                                    android:background="@drawable/round_edittext"
+                                    android:padding="5dp"
+                                    android:textSize="13sp"
+                                    android:text=""/>
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textSize="12sp"
+                                android:textStyle="italic"
+                                android:text="  Alamat"/>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/etAlamatAkun"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/round_edittext"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="30dp"
+                                    android:maxLines="3"
+                                    android:editable="false"
+                                    android:textSize="13sp"
+                                    android:text=""/>
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textSize="12sp"
+                                android:textStyle="italic"
+                                android:text="  Nomor Telepon"/>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/etNoHpAkun"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:editable="false"
+                                    android:background="@drawable/round_edittext"
+                                    android:padding="5dp"
+                                    android:textSize="13sp"
+                                    android:text=""/>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnEditAkun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llAtas"
+                        android:text="Ubah"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/llUbahPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:foreground="?attr/selectableItemBackground">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_lock_open"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:text="Ubah Password"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llBantuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        android:foreground="?attr/selectableItemBackground">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_help_outline_grey"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:text="Bantuan"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvAkunBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_marginTop="10dp"
+        app:cardElevation="16dp"
+        app:cardCornerRadius="4dp">
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:text="LOGOUT"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@color/putih"
+            android:textColor="@color/merah"/>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

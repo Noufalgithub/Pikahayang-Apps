@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    tools:context=".BantuanActivity">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar_bantuan"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:id="@+id/rlHubungiKami"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/putih"
+            android:foreground="?attr/selectableItemBackground">
+            <ImageView
+                android:id="@+id/ivPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_people"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivPeople"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/hitam"
+                    android:text="Hubungi Kami"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Butuh bantuan? Pertanyaa?"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlKetentuan"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/putih"
+            android:foreground="?attr/selectableItemBackground">
+            <ImageView
+                android:id="@+id/ivKetent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_description"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ivKetent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/hitam"
+                android:text="Ketentuan dan Kebijakan Privasi"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlInfoAplikasi"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/putih"
+            android:foreground="?attr/selectableItemBackground">
+            <ImageView
+                android:id="@+id/ivInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_info"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ivInfo"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/hitam"
+                android:text="Info Aplikasi"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

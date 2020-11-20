@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "148911932833",
+    "firebase_url": "https://pikahayang-c3589.firebaseio.com",
+    "project_id": "pikahayang-c3589",
+    "storage_bucket": "pikahayang-c3589.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148911932833:android:3a7112335fd4d165",
+        "android_client_info": {
+          "package_name": "pikahayang.pikahayang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148911932833-cfepaje1nirroqtmrp5oiq8qda4opo72.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pikahayang.pikahayang",
+            "certificate_hash": "7edbc0e68675bbe138677ddff4ce4041068d3f24"
+          }
+        },
+        {
+          "client_id": "148911932833-uvgeukuk71l78ha9m4doa1lrfcrlpst2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI5PY-7rpb3UllEkIvPzQ_Dk0xsLjKsYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148911932833-uvgeukuk71l78ha9m4doa1lrfcrlpst2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BerandaActivity">
+
+    <include
+        android:id="@+id/toolbarBeranda"
+        layout="@layout/toolbar_beranda"
+        />
+
+   <FrameLayout
+       android:id="@+id/flBeranda"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@id/navigation"
+       android:layout_below="@id/toolbarBeranda">
+   </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/putih"
+        android:elevation="8dp"
+        app:menu="@menu/navigation" />
+
+</RelativeLayout>

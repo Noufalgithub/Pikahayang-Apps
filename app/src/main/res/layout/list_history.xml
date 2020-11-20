@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/cvHistory"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardMaxElevation="5dp"
+    card_view:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/viewHistory"
+            android:layout_width="20dp"
+            android:layout_height="133dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/hijau"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/viewHistory"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvStatusTransaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hijau"
+                android:textStyle="bold"
+                android:text="Transaksi Berhasil"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hitam"
+                    android:text="Kode Transaksi : "/>
+                <TextView
+                    android:id="@+id/tvKdTransaksi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hitam"
+                    android:text="PKHY-001"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTglTransaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="10 Januari 2018"/>
+
+            <TextView
+                android:id="@+id/tvStatusPesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/hitam"
+                android:textStyle="italic"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_edittext"
+                android:padding="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="BARANG SUDAH DITERIMA"/>
+
+            <TextView
+                android:id="@+id/tvLihatDetailPesanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lihat detail pesanan"
+                android:textColor="@color/dongker"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

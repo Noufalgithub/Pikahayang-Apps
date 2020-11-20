@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="pikahayang.pikahayang">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/logojpg"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="n">
+        <activity android:name=".BantuanActivity"
+            android:theme="@style/Home"></activity>
+        <activity android:name=".KetentuanKebijakanActivity"
+            android:theme="@style/Home"/>
+        <activity android:name=".InfoAplikasiActivity"
+            android:theme="@style/Home"/>
+        <activity android:name=".HubungiKamiActivity"
+            android:theme="@style/Home"/>
+        <activity android:name=".FAQActivity" />
+
+        <service
+            android:name=".Service.MyFirebaseInstanceService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".SpashScreenActivity"
+            android:theme="@style/Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Home"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Home"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".BerandaActivity"
+            android:label="@string/title_activity_beranda"
+            android:theme="@style/Home"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ShoppingCartActivity"
+            android:theme="@style/Home" />
+        <activity
+            android:name=".LupaPasswordActivity"
+            android:theme="@style/Home"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Detail_produk"
+            android:theme="@style/Home" />
+        <activity
+            android:name=".SearchBatik"
+            android:theme="@style/Search" />
+        <activity
+            android:name=".SearchBatikBaju"
+            android:theme="@style/Search" />
+        <activity
+            android:name=".SearchBatikDesainpluskain"
+            android:theme="@style/Search" />
+        <activity
+            android:name=".SettingAkun"
+            android:theme="@style/Home" />
+        <activity
+            android:name=".CheckOutActivity"
+            android:theme="@style/Home"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".SearchHistoryTransaksi"
+            android:theme="@style/Search" />
+        <activity
+            android:name=".PaymentActivity"
+            android:theme="@style/Home"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DetailPembelianActivity"
+            android:theme="@style/Home"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DetailTransaksiActivity"
+            android:theme="@style/Home"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".UbahPasswordActivity"
+            android:theme="@style/Home"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".KonfirmasiActivity"
+            android:theme="@style/Btn" />
+    </application>
+
+</manifest>
